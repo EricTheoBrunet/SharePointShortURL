@@ -1,16 +1,16 @@
 # SharePointShortURL
 
-In this project I am sharing instructions and sample code to create short links using sharepoint.
+In this project I am sharing instructions and sample code to help you create short links using sharepoint.
 
 ### Use case
 Véronique needs to include a link to a Microsoft Teams meeting invites in the corporate HR employee learning system. The system only accepts a maximum lenght of 100 characters. The Microsoft Teams meeting invite is well above 100 characters.
 
 ### Common approach 
 Users will typically use a third party like https://bitly.com/
-This approach may not be appropriate as you are sending data outside of your organization.
+This approach may not be appropriate as you are sending trafic outside of your organization.
 
 ### Proposed solution
-Host ASPX files using the shortest path possible on your SharePoint site and use a basic HTML technique to redirect to the longer link.  
+Host ASPX files using the shortest path possible on your SharePoint site and use a basic HTML technique to redirect users to the longer URL.  
 
 ### Requirements
 * Read/Write access to a SharePoint file repository.
