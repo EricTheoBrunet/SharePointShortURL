@@ -21,7 +21,7 @@ Host an ASPX file using the shortest path possible on your SharePoint site and u
 ### Instructions
 1. Make a local copy of the file [short-url.aspx](https://github.com/EricTheoBrunet/SharePointShortURL/blob/main/short-url.aspx) found in this repository.
 1. Open the file using a basic text editor like Notepad on Windows or TextEdit on Mac.
-1. Replace both *long-url* in the file with your long URL.
+1. Replace both instances of *long-url* in the file with your long URL.
 1. Set *redirect-delay* to 0. This is the number of seconds it will take before the redirect occurs. 
 ```
 <html>
