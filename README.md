@@ -3,7 +3,7 @@
 I am sharing instructions and sample code to help you create short links using sharepoint.
 
 ### Use case
-Véronique needs to include a link to a Microsoft Teams meeting invites in the corporate HR employee learning system. The system only accepts a maximum length of 100 characters. The Microsoft Teams meeting invite is well above 100 characters.
+Véronique needs to include a link to a meeting invite in the corporate HR employee learning system. The system only accepts a maximum length of 100 characters. The Microsoft Teams meeting invite is well above 100 characters.
 
 ### Common approach 
 Users will typically use a third party like https://bitly.com/
