@@ -16,6 +16,16 @@ Host ASPX files using the shortest path possible on your SharePoint site and use
 * Read/Write access to a SharePoint file repository.
 
 ### Instructions
+Make a local copy of the file [short-url.aspx](https://github.com/EricTheoBrunet/SharePointShortURL/blob/main/short-url.aspx) found in this repository.
+Open the file using a basic text editor like Notepad on Windows or TextEdit on Mac.
+<html>
+	<head>
+		<meta http-equiv="refresh" content="0; URL='''long-url'''" />
+	</head>
+	<body>
+		<p>If you are not redirected, <a href="long-url">click here</a>.</p>
+	</body>
+</html>
 
 
 
