@@ -7,6 +7,7 @@ Véronique needs to include a link to a Microsoft Teams meeting invites in the c
 
 ### Common approach 
 Users will typically use a third party like https://bitly.com/
+
 This approach may not be appropriate as you are sending trafic outside of your organization.
 
 ### Proposed solution
@@ -16,43 +17,32 @@ Host ASPX files using the shortest path possible on your SharePoint site and use
 * Read/Write access to a SharePoint file repository.
 
 ### Instructions
-Make a local copy of the file [short-url.aspx](https://github.com/EricTheoBrunet/SharePointShortURL/blob/main/short-url.aspx) found in this repository.
-Open the file using a basic text editor like Notepad on Windows or TextEdit on Mac.
+1. Make a local copy of the file [short-url.aspx](https://github.com/EricTheoBrunet/SharePointShortURL/blob/main/short-url.aspx) found in this repository.
+1. Open the file using a basic text editor like Notepad on Windows or TextEdit on Mac.
+1. Replace both *long-url* in the file with your long URL.
+1. Set *redirect-delay* to 0. This is the number of seconds it will take before the redirect occurs. 
+```
 <html>
 	<head>
-		<meta http-equiv="refresh" content="0; URL='''long-url'''" />
+		<meta http-equiv="refresh" content="redirect-delay; URL=long-url" />
 	</head>
 	<body>
 		<p>If you are not redirected, <a href="long-url">click here</a>.</p>
 	</body>
 </html>
+```
+4. Rename the ASPX file to something meaningful, try to keep it as short as possible (this will inpact the length of your short URL).
+1. Upload the ASPX file to you SharePoint. Try to keep the folder structure light and the folder names short. Exmaple: https://corporate.sharepoint.com/sites/HR/Learning/Redirect/short-url.aspx
+1. Once uploaded click the file and you should be redirected to your long URL. If not, verify your code changes and make sure you only replaced the long-url.
 
-
-
-
-### Versioning
-
-All release changes can be viewed on our [changelog](CHANGELOG.md).
-
-# Support
+Note: The file can only be edited locally on your computer and uploaded to SharePoint everytime you make a change.
 
 ### FAQ
-
-https://github.com/pico7/trendots-particle-photon/wiki
-
-### Code of Conduct
-
-Take a moment to read our [Code of Conduct](CODE_OF_CONDUCT.md)
-
-### Need help?
-Need help using UI Bootstrap?
-
-* Ask a question in [StackOverflow](http://stackoverflow.com/) under the [trendots-particle-photon](http://stackoverflow.com/questions/tagged/trendots-particle-photon) tag.
-
-**Please do not create new issues in this repository to ask questions about using the Photon or Trendots**
+The page gets redirected before I am able to grab the short URL.
+* Temporarely set the *redirect-delay* to lets say 30, upload the new changes, click on the file where you will now have 30 seconds to grab the short URL. Once you have it, set back *redirect-delay* to 0 (or the value of your choise) and upload your file.  
 
 ### Found a bug?
-Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/pico7/trendots-particle-photon/issues/new).
+Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/EricTheoBrunet/SharePointShortURL/issues).
 
 
 ----
