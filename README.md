@@ -8,7 +8,9 @@ Véronique needs to include a link to a meeting invite in the corporate HR emplo
 ### Common approach 
 Users will typically use a third party like https://bitly.com/
 
-This approach may not always be appropriate as you are routing traffic outside of your organization.
+This approach may not always be appropriate:
+* Routing traffic outside of your organization.
+* Cost implications
 
 ### Proposed solution
 Host an ASPX file using the shortest path possible on your SharePoint site and use a basic HTML technique to redirect users to the longer URL.  
