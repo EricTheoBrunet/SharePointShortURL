@@ -36,13 +36,16 @@ Host an ASPX file using the shortest path possible on your SharePoint site and u
 4. Rename the ASPX file to something meaningful, try to keep it as short as possible (this will impact the length of your short URL).
 1. Upload the ASPX file to SharePoint. Keep the folder structure and file name short. Example: https://corporate.sharepoint.com/sites/HR/Learning/Redirect/short-url.aspx for a grand total of 64 characters Yay!
 1. Once uploaded click the file and you will be redirected to your long URL. If not, verify your code changes and make sure you only replaced the long-url portion of the code without changing any other character(s), this really matters.
-1. Since we are using direct links you need to make sure that your target audience has at least read-only access to the file.
+1. You can’t use the “copy link” function, you need to use a direct path to the file. Make sure your target audience has at least read-only access to the file.
 
 Note: The file can only be edited locally on your computer so make sure you upload the latest file to SharePoint and overwrite every time you make a change.
 
 ### FAQ
 The page gets redirected before I am able to grab the short URL.
 * Temporarily set the *redirect-delay* to lets say 30, upload the new changes, click on the file where you will now have 30 seconds to grab the short URL. Once you have it, set back *redirect-delay* to 0 (or the value of your choice) and upload your file.  
+
+I am prompted to download the ASPX file.
+* You can’t use the “copy link” function, you need to use a direct path to the file. Also make sure your target audience has at least read-only access to the file.
 
 ### Found a bug?
 Please take a look at [CONTRIBUTING.md](CONTRIBUTING.md#you-think-youve-found-a-bug) and submit your issue [here](https://github.com/EricTheoBrunet/SharePointShortURL/issues).
